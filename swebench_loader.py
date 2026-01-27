@@ -8,7 +8,16 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 class SWEBenchLoader:
-    def __init__(self, cache_dir: str = "datasets"):
+    def __init__(self, cache_dir: str = "datasets", dataset_dir: str = None):
+        """
+        Args:
+            cache_dir: 캐시 디렉토리 (기본값: "datasets")
+            dataset_dir: 레거시 호환성을 위한 파라미터 (cache_dir와 동일)
+        """
+        # dataset_dir이 제공되면 우선 사용 (하위 호환성)
+        if dataset_dir is not None:
+            cache_dir = dataset_dir
+            
         self.cache_dir = Path(cache_dir)
         self.cache_dir.mkdir(exist_ok=True)
         self.cache_file = self.cache_dir / "swebench_verified.json"

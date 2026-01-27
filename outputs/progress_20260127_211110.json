@@ -1,0 +1,3325 @@
+{
+  "timestamp": "2026-01-27T21:11:10.995372",
+  "processed": 440,
+  "errors": 0,
+  "results": [
+    {
+      "instance_id": "sympy__sympy-13031",
+      "analysis_time": 0.0004911422729492188,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 8,
+                "deleted": 4,
+                "modified": 12
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": 26,
+                "tokens_before": 53,
+                "tokens_after": 75,
+                "token_change_ratio": 0.49056603773584906
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/matrices/sparse.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "2dfa7457f20ee187fbb09b5b6a1631da4458388c",
+      "problem_statement": "Behavior of Matrix hstack and vstack changed in sympy 1.1\nIn sympy 1.0:\r\n```\r\nimport sympy as sy\r\nM1 = sy.Matrix.zeros(0, 0)\r\nM2 = sy.Matrix.zeros(0, 1)\r\nM3 = sy.Matrix.zeros(0, 2)\r\nM4 = sy.Matrix.zer"
+    },
+    {
+      "instance_id": "sympy__sympy-13091",
+      "analysis_time": 0.004846096038818359,
+      "metrics": {
+        "num_files_analyzed": 21,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 3,
+                "deleted": 3,
+                "modified": 6
+              },
+              {
+                "added": 2,
+                "deleted": 2,
+                "modified": 4
+              },
+              {
+                "added": 15,
+                "deleted": 15,
+                "modified": 30
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 2,
+                "deleted": 2,
+                "modified": 4
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 2,
+                "deleted": 2,
+                "modified": 4
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 14,
+                "deleted": 14,
+                "modified": 28
+              },
+              {
+                "added": 3,
+                "deleted": 3,
+                "modified": 6
+              },
+              {
+                "added": 2,
+                "deleted": 2,
+                "modified": 4
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              },
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": 4,
+                "tokens_before": 30,
+                "tokens_after": 27,
+                "token_change_ratio": 0.13333333333333333
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": 4,
+                "tokens_before": 27,
+                "tokens_after": 24,
+                "token_change_ratio": 0.14814814814814814
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": 12,
+                "tokens_before": 96,
+                "tokens_after": 87,
+                "token_change_ratio": 0.125
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": 4,
+                "tokens_before": 48,
+                "tokens_after": 45,
+                "token_change_ratio": 0.08333333333333333
+              },
+              {
+                "token_distance": -1,
+                "error": true
+              },
+              {
+                "token_distance": 4,
+                "tokens_before": 18,
+                "tokens_after": 15,
+                "token_change_ratio": 0.2222222222222222
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              },
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              },
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              },
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              },
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              },
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              },
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              },
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              },
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              },
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              },
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 21,
+      "files": [
+        "sympy/core/basic.py",
+        "sympy/core/exprtools.py",
+        "sympy/core/numbers.py",
+        "sympy/geometry/entity.py",
+        "sympy/physics/optics/medium.py",
+        "sympy/physics/vector/dyadic.py",
+        "sympy/physics/vector/frame.py",
+        "sympy/physics/vector/vector.py",
+        "sympy/polys/agca/modules.py",
+        "sympy/polys/domains/domain.py",
+        "sympy/polys/domains/expressiondomain.py",
+        "sympy/polys/domains/pythonrational.py",
+        "sympy/polys/domains/quotientring.py",
+        "sympy/polys/fields.py",
+        "sympy/polys/monomials.py",
+        "sympy/polys/polyclasses.py",
+        "sympy/polys/polytools.py",
+        "sympy/polys/rings.py",
+        "sympy/polys/rootoftools.py",
+        "sympy/tensor/array/ndim_array.py",
+        "sympy/utilities/enumerative.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "d1320814eda6549996190618a21eaf212cfd4d1e",
+      "problem_statement": "Return NotImplemented, not False, upon rich comparison with unknown type\nComparison methods should ideally return ``NotImplemented`` when unable to make sense of the arguments. This way, the compariso"
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "analysis_time": 0.00021386146545410156,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 4,
+                "deleted": 0,
+                "modified": 4
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": -1,
+                "error": true
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/core/evalf.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "30379ea6e225e37833a764ac2da7b7fadf5fe374",
+      "problem_statement": "UnboundLocalError in evalf\n```\r\n>>> Mul(x, Max(0, y), evaluate=False).evalf()\r\nx*Max(0, y)\r\n>>> Mul(Max(0, y), x, evaluate=False).evalf()\r\nTraceback (most recent call last):\r\n  File \"./sympy/core/eval"
+    },
+    {
+      "instance_id": "sympy__sympy-13480",
+      "analysis_time": 0.0002968311309814453,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": 1,
+                "tokens_before": 37,
+                "tokens_after": 37,
+                "token_change_ratio": 0.02702702702702703
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/functions/elementary/hyperbolic.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "f57fe3f4b3f2cab225749e1b3b38ae1bf80b62f0",
+      "problem_statement": ".subs on coth(log(tan(x))) errors for certain integral values\n    >>> from sympy import *\r\n    >>> x = Symbol('x')\r\n    >>> e = coth(log(tan(x)))\r\n    >>> print(e.subs(x, 2))\r\n    ...\r\n    File \"C:\\Us"
+    },
+    {
+      "instance_id": "sympy__sympy-13551",
+      "analysis_time": 0.00020384788513183594,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 2,
+                "deleted": 2,
+                "modified": 4
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": -1,
+                "error": true
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.5,
+                "normalized": 0.5,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.5,
+                "normalized": 0.5,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.5,
+                "normalized": 0.5,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 1.0,
+                "normalized": 0.5,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 1.5,
+                "normalized": 0.5,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/concrete/products.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "9476425b9e34363c2d9ac38e9f04aa75ae54a775",
+      "problem_statement": "Product(n + 1 / 2**k, [k, 0, n-1]) is incorrect\n    >>> from sympy import *\r\n    >>> from sympy.abc import n,k\r\n    >>> p = Product(n + 1 / 2**k, [k, 0, n-1]).doit()\r\n    >>> print(simplify(p))\r\n    2"
+    },
+    {
+      "instance_id": "sympy__sympy-13615",
+      "analysis_time": 0.00019407272338867188,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 11,
+                "deleted": 1,
+                "modified": 12
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": -1,
+                "error": true
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/sets/sets.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "50d8a102f0735da8e165a0369bbb994c7d0592a6",
+      "problem_statement": "Complement doesn't work when input is a mixture of Symbols and numbers\n```\r\n>>> a=FiniteSet(x,y,2)\r\n>>> b=Interval(-10,10)\r\n>>> Complement(a,b)\r\n{x, y}\r\n```\r\n`{x, y} \\ [-10,10]` is expected as output."
+    },
+    {
+      "instance_id": "sympy__sympy-13647",
+      "analysis_time": 0.00018405914306640625,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 1,
+                "deleted": 1,
+                "modified": 2
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": -1,
+                "error": true
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/matrices/common.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "67e3c956083d0128a621f65ee86a7dacd4f9f19f",
+      "problem_statement": "Matrix.col_insert() no longer seems to work correctly.\nExample:\r\n\r\n```\r\nIn [28]: import sympy as sm\r\n\r\nIn [29]: M = sm.eye(6)\r\n\r\nIn [30]: M\r\nOut[30]: \r\n\u23a11  0  0  0  0  0\u23a4\r\n\u23a2                \u23a5\r\n\u23a20  1  0"
+    },
+    {
+      "instance_id": "sympy__sympy-13757",
+      "analysis_time": 0.00024390220642089844,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 1,
+                "deleted": 0,
+                "modified": 1
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": 3,
+                "tokens_before": 22,
+                "tokens_after": 25,
+                "token_change_ratio": 0.13636363636363635
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/polys/polytools.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "a5e6a101869e027e7930e694f8b1cfb082603453",
+      "problem_statement": "Multiplying an expression by a Poly does not evaluate when the expression is on the left side of the multiplication\nTested in Python 3.4 64-bit and 3.6 64-bit\r\nVersion: 1.1.2.dev0\r\n```\r\n>>> Poly(x)*x\r"
+    },
+    {
+      "instance_id": "sympy__sympy-13798",
+      "analysis_time": 0.00020313262939453125,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 17,
+                "deleted": 6,
+                "modified": 23
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": -1,
+                "error": true
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/printing/latex.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "7121bdf1facdd90d05b6994b4c2e5b2865a4638a",
+      "problem_statement": "latex() and mul_symbol\nThe `latex()` pretty-printing function accepts a `mul_symbol` kwarg that must be one of four choices. I would like to be able to supply my own choice which is not in the list. S"
+    },
+    {
+      "instance_id": "sympy__sympy-13852",
+      "analysis_time": 0.006203889846801758,
+      "metrics": {
+        "num_files_analyzed": 1,
+        "aggregated": {
+          "basic": {
+            "LOC": [
+              {
+                "added": 25,
+                "deleted": 5,
+                "modified": 30
+              }
+            ],
+            "Token_Edit_Distance": [
+              {
+                "token_distance": 256,
+                "tokens_before": 219,
+                "tokens_after": 444,
+                "token_change_ratio": 1.1689497716894977
+              }
+            ],
+            "Cyclomatic_Complexity": [
+              {
+                "delta_total": -1,
+                "error": true
+              }
+            ],
+            "Halstead_Difficulty": [
+              {
+                "delta_difficulty": 0,
+                "delta_volume": 0,
+                "delta_effort": 0
+              }
+            ],
+            "Variable_Scope": [
+              {
+                "local_to_global": 0,
+                "global_to_local": 0,
+                "local_to_nonlocal": 0,
+                "new_globals": 0,
+                "removed_globals": 0,
+                "total_scope_changes": 0
+              }
+            ]
+          },
+          "ast": {
+            "AST_GED": [
+              {
+                "ast_ged": 0,
+                "ast_size_before": 1,
+                "ast_size_after": 1,
+                "ast_size_delta": 0,
+                "normalized_ged": 0.0
+              }
+            ],
+            "Exception_Handling": [
+              {
+                "total_exception_changes": -1,
+                "error": true
+              }
+            ],
+            "Type_Changes": [
+              {
+                "annotated_args_delta": 0,
+                "return_annotations_delta": 0,
+                "variable_annotations_delta": 0,
+                "new_types": [],
+                "removed_types": [],
+                "total_type_changes": 0
+              }
+            ]
+          },
+          "graph": {
+            "CFG_GED": [
+              {
+                "cfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0
+              }
+            ],
+            "DFG_GED": [
+              {
+                "dfg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 1,
+                "nodes_after": 1,
+                "edges_before": 0,
+                "edges_after": 0,
+                "def_use_chains_before": 0,
+                "def_use_chains_after": 0,
+                "method": "beam_search",
+                "beam_width": 100
+              }
+            ],
+            "Call_Graph_GED": [
+              {
+                "callgraph_ged": 0.0,
+                "normalized": 0.0,
+                "functions_before": 0,
+                "functions_after": 0,
+                "calls_before": 0,
+                "calls_after": 0
+              }
+            ],
+            "PDG_GED": [
+              {
+                "pdg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 2,
+                "nodes_after": 2,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ],
+            "CPG_GED": [
+              {
+                "cpg_ged": 0.0,
+                "normalized": 0.0,
+                "nodes_before": 3,
+                "nodes_after": 3,
+                "edges_before": 0,
+                "edges_after": 0,
+                "method": "merged_graph_ged",
+                "strategy": "unknown"
+              }
+            ]
+          }
+        }
+      },
+      "errors": [],
+      "num_files": 1,
+      "files": [
+        "sympy/functions/special/zeta_functions.py"
+      ],
+      "repo": "sympy/sympy",
+      "base_commit": "c935e1d106743efd5bf0705fbeedbd18fadff4dc",
+      "problem_statement": "Add evaluation for polylog\n```\nIn [1]: polylog(2, Rational(1,2))\nOut[1]: polylog(2, 1/2)\n\nIn [2]: polylog(2, Rational(1,2)).expand(func=True)\nOut[2]: polylog(2, 1/2)\n\nThe answer should be -log(2)**2/2"
+    }
+  ]
+}
