@@ -1,0 +1,132 @@
+{
+  "instance_id": "my-bug-001",
+  "analysis_time": 0.0017344951629638672,
+  "metrics": {
+    "num_files_analyzed": 1,
+    "aggregated": {
+      "basic": {
+        "LOC": [
+          {
+            "added": 1,
+            "deleted": 0,
+            "modified": 1
+          }
+        ],
+        "Token_Edit_Distance": [
+          {
+            "token_distance": 4,
+            "tokens_before": 7,
+            "tokens_after": 11,
+            "token_change_ratio": 0.5714285714285714
+          }
+        ],
+        "Cyclomatic_Complexity": [
+          {
+            "delta_average": 0.0,
+            "delta_max": 0,
+            "delta_total": 0
+          }
+        ],
+        "Halstead_Difficulty": [
+          {
+            "delta_difficulty": 0.5,
+            "delta_volume": 4.754887502163468,
+            "delta_effort": 2.377443751081734
+          }
+        ],
+        "Variable_Scope": [
+          {
+            "local_to_global": 0,
+            "global_to_local": 0,
+            "local_to_nonlocal": 0,
+            "new_globals": 0,
+            "removed_globals": 0,
+            "total_scope_changes": 0
+          }
+        ]
+      },
+      "ast": {
+        "AST_GED": [
+          {
+            "ast_ged": 5,
+            "ast_size_before": 4,
+            "ast_size_after": 9,
+            "ast_size_delta": 5,
+            "normalized_ged": 0.5555555555555556
+          }
+        ],
+        "Exception_Handling": [
+          {
+            "try_blocks_delta": 0,
+            "except_handlers_delta": 0,
+            "new_exception_types": [],
+            "removed_exception_types": [],
+            "exception_specificity_change": 0,
+            "finally_blocks_delta": 0,
+            "raise_statements_delta": 0,
+            "total_exception_changes": 0
+          }
+        ],
+        "Type_Changes": [
+          {
+            "annotated_args_delta": 0,
+            "return_annotations_delta": 0,
+            "variable_annotations_delta": 0,
+            "new_types": [],
+            "removed_types": [],
+            "total_type_changes": 0
+          }
+        ]
+      },
+      "graph": {
+        "CFG_GED": [
+          {
+            "cfg_ged": 0.0,
+            "normalized": 0.0,
+            "nodes_before": 3,
+            "nodes_after": 3
+          }
+        ],
+        "DFG_GED": [
+          {
+            "dfg_ged": 1.0,
+            "normalized": 1.0,
+            "nodes_before": 0,
+            "nodes_after": 1,
+            "def_use_chains_before": 0,
+            "def_use_chains_after": 0,
+            "method": "beam_search",
+            "beam_width": 10
+          }
+        ],
+        "Call_Graph_GED": [
+          {
+            "callgraph_ged": 0.0,
+            "normalized": 0.0,
+            "functions_before": 1,
+            "functions_after": 1
+          }
+        ],
+        "PDG_GED": [
+          {
+            "pdg_ged": 1.0,
+            "normalized": 0.25,
+            "method": "cfg+dfg_approximation"
+          }
+        ],
+        "CPG_GED": [
+          {
+            "cpg_ged": 1.0,
+            "normalized": 0.2,
+            "method": "cfg+dfg+cg_approximation"
+          }
+        ]
+      }
+    }
+  },
+  "errors": [],
+  "num_files": 1,
+  "files": [
+    "your_file.py"
+  ]
+}
