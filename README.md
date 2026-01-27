@@ -215,3 +215,45 @@ MIT License
 - SWE-bench team for the dataset
 - Baldwin & Clark for modularity theory
 - Riesen & Bunke for GED approximation algorithms
+
+## V3: Module-Level Scope Analysis (NEW!)
+
+V3 introduces **module-level scope analysis** for more accurate bug difficulty measurement.
+
+### Quick Start
+
+```bash
+# Analyze with default scope (depth=3, top-k=5)
+python3 run_swebench_analysis_v3.py --limit 5
+
+# Custom scope configuration
+python3 run_swebench_analysis_v3.py --limit 5 --scope-depth 2 --top-k 10
+
+# Test with mock data
+python3 run_swebench_analysis_v3.py --mock --limit 2
+```
+
+### Key Features
+
+- **Primary Modules**: All files in changed modules (configurable depth)
+- **Secondary Modules**: Top-k files from dependent modules
+- **Direct Imports**: Explicitly imported files
+- **Enhanced Metrics**: Separate analysis for changed vs context files
+- **Configurable Scope**: Adjust depth (1-5) and top-k (1-20)
+
+### Documentation
+
+- [V3 Quick Start Guide](V3_QUICKSTART.md) - Complete user guide
+- [V3 Implementation Summary](V3_IMPLEMENTATION_SUMMARY.md) - Technical details
+
+### V2 vs V3
+
+| Feature | V2 | V3 |
+|---------|----|----|
+| Scope | Changed files only | Full module context |
+| Files Analyzed | 1-2 | 10-50 (configurable) |
+| Context Capture | Limited | Comprehensive |
+| Cross-file Dependencies | ❌ | ✅ |
+
+Both V2 and V3 are production-ready and can be used side-by-side.
+
