@@ -85,3 +85,35 @@ class SWEBenchLoader:
     def is_cached(self) -> bool:
         """캐시 파일이 존재하는지 확인"""
         return self.cache_file.exists()
+    
+    def create_mock_dataset(self, n: int = 10) -> List[Dict[str, Any]]:
+        """
+        Create mock dataset for testing.
+        
+        Args:
+            n: Number of mock instances
+            
+        Returns:
+            List of mock instances
+        """
+        mock_instances = []
+        
+        for i in range(n):
+            mock_instances.append({
+                'instance_id': f'mock-{i+1:03d}',
+                'repo': 'https://github.com/octocat/Hello-World',
+                'base_commit': 'master',
+                'patch': f"""
+diff --git a/test_{i}.py b/test_{i}.py
+index 1234567..abcdefg 100644
+--- a/test_{i}.py
++++ b/test_{i}.py
+@@ -1,3 +1,4 @@
++# Modified line {i}
+ def test_{i}():
+     pass
+""",
+                'problem_statement': f'Mock problem statement {i}'
+            })
+        
+        return mock_instances

@@ -44,7 +44,7 @@ for name, script in tests:
         import subprocess
         result = subprocess.run(
             ["python3", script],
-            cwd="/home/claude/bug_difficulty_analyzer",
+            cwd=str(Path(__file__).parent),
             capture_output=True,
             text=True,
             timeout=30
