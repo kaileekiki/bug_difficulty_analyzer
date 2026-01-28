@@ -72,17 +72,24 @@ class ProductionBugAnalyzerV2:
         - URL with .git: "https://github.com/scikit-learn/scikit-learn.git" -> (same, "scikit-learn_scikit-learn")
         
         Args:
-            repo_field: Repository field from SWE-bench dataset
+            repo_field: Repository field from SWE-bench dataset (GitHub repositories only)
             
         Returns:
             Tuple of (repo_url, repo_name) where:
             - repo_url: Full GitHub clone URL with .git suffix
             - repo_name: Repository name for caching (owner_repo)
+            
+        Raises:
+            ValueError: If the URL is not a valid GitHub repository URL
         """
         repo_field = repo_field.strip()
         
         # Check if it's already a URL
         if repo_field.startswith('http://') or repo_field.startswith('https://'):
+            # Validate it's a GitHub URL
+            if 'github.com' not in repo_field.lower():
+                raise ValueError(f"Only GitHub repositories are supported. Got: {repo_field}")
+            
             # Extract from URL
             # Remove .git suffix if present
             url_base = repo_field.rstrip('/')
@@ -95,10 +102,14 @@ class ProductionBugAnalyzerV2:
             if len(parts) >= 2:
                 owner = parts[-2]
                 repo = parts[-1]
+                
+                # Validate we got meaningful owner/repo
+                if not owner or not repo or owner == 'github.com':
+                    raise ValueError(f"Invalid GitHub URL format. Expected https://github.com/owner/repo, got: {repo_field}")
+                
                 repo_identifier = f"{owner}/{repo}"
             else:
-                # Fallback: just use the URL as-is
-                repo_identifier = url_base.replace('https://github.com/', '').replace('http://github.com/', '')
+                raise ValueError(f"Invalid GitHub URL format. Expected https://github.com/owner/repo, got: {repo_field}")
             
             # Construct proper URL with .git
             repo_url = f"{url_base}.git"
@@ -108,6 +119,15 @@ class ProductionBugAnalyzerV2:
         else:
             # Assume it's in "owner/repo" format
             repo_identifier = repo_field
+            
+            # Validate format
+            if '/' not in repo_identifier:
+                raise ValueError(f"Invalid repository identifier. Expected 'owner/repo' format, got: {repo_identifier}")
+            
+            parts = repo_identifier.split('/')
+            if len(parts) != 2 or not parts[0] or not parts[1]:
+                raise ValueError(f"Invalid repository identifier. Expected 'owner/repo' format, got: {repo_identifier}")
+            
             repo_url = f"https://github.com/{repo_identifier}.git"
             repo_name = repo_identifier.replace('/', '_')
             
