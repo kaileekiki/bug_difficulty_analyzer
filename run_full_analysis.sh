@@ -19,17 +19,33 @@ echo "  - Started at: $(date)" | tee -a $LOG_FILE
 echo "  - Log file: $LOG_FILE" | tee -a $LOG_FILE
 echo "======================================================================" | tee -a $LOG_FILE
 
-# Check disk space
-AVAIL_GB=$(df -h . | tail -1 | awk '{print $4}' | sed 's/Gi//')
+# Check disk space (convert to GB regardless of unit)
+AVAIL_SPACE=$(df -h . | tail -1 | awk '{print $4}')
+# Extract numeric value and convert to GB
+AVAIL_GB=$(echo "$AVAIL_SPACE" | sed 's/[^0-9.]//g')
+UNIT=$(echo "$AVAIL_SPACE" | sed 's/[0-9.]//g')
+
 echo "" | tee -a $LOG_FILE
 echo "Disk space check:" | tee -a $LOG_FILE
-echo "  Available: ${AVAIL_GB} GB" | tee -a $LOG_FILE
+echo "  Available: ${AVAIL_SPACE}" | tee -a $LOG_FILE
 
-if (( $(echo "$AVAIL_GB < 50" | bc -l) )); then
-    echo "  ⚠️  Warning: Less than 50 GB available" | tee -a $LOG_FILE
-    echo "  Recommended: 50 GB (repos ~30 GB + outputs ~5 GB)" | tee -a $LOG_FILE
+# Convert to GB if needed
+if [ -n "$AVAIL_GB" ]; then
+    case "$UNIT" in
+        T|Ti) AVAIL_GB=$(echo "$AVAIL_GB * 1024" | awk '{print $1 * 1024}') ;;
+        M|Mi) AVAIL_GB=$(echo "$AVAIL_GB / 1024" | awk '{print $1 / 1024}') ;;
+        G|Gi) ;; # Already in GB
+        *) AVAIL_GB=0 ;;
+    esac
+    
+    if [ $(echo "$AVAIL_GB < 50" | awk '{print ($1 < 50)}') -eq 1 ]; then
+        echo "  ⚠️  Warning: Less than 50 GB available" | tee -a $LOG_FILE
+        echo "  Recommended: 50 GB (repos ~30 GB + outputs ~5 GB)" | tee -a $LOG_FILE
+    else
+        echo "  ✅ Sufficient disk space (${AVAIL_GB} GB)" | tee -a $LOG_FILE
+    fi
 else
-    echo "  ✅ Sufficient disk space" | tee -a $LOG_FILE
+    echo "  ⚠️  Could not determine disk space" | tee -a $LOG_FILE
 fi
 
 echo "" | tee -a $LOG_FILE

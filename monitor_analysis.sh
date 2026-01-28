@@ -25,8 +25,8 @@ show_progress() {
         # Count errors array length
         ERROR_COUNT=$(grep -c '"errors":' "$PROGRESS_FILE" 2>/dev/null || echo "0")
         
-        if [ -n "$PROCESSED" ]; then
-            echo "  Processed: $PROCESSED / 500 ($(echo "scale=1; $PROCESSED * 100 / 500" | bc)%)"
+        if [ -n "$PROCESSED" ] && [ "$PROCESSED" -gt 0 ]; then
+            echo "  Processed: $PROCESSED / 500 ($(awk "BEGIN {printf \"%.1f\", $PROCESSED * 100 / 500}")%)"
             echo "  Progress file: $(basename $PROGRESS_FILE)"
             echo ""
         else

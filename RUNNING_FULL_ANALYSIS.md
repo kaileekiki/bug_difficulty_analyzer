@@ -69,9 +69,9 @@ cat outputs/progress_v3_*.json | grep "processed"
 python3 run_swebench_analysis_v3.py --start-from 234
 ```
 
-## After Completion
+### After Completion
 
-### Merge results (if ran in batches):
+### Merge results (if run in batches):
 
 ```bash
 python3 merge_results.py

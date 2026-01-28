@@ -2,13 +2,22 @@
 """
 Merge V3 Analysis Results
 Combines multiple JSON result files into one merged file
+
+Requirements:
+    - pandas: pip install pandas
 """
 
 import json
 import glob
 from datetime import datetime
 from pathlib import Path
-import pandas as pd
+
+try:
+    import pandas as pd
+except ImportError:
+    print("❌ Error: pandas is required for this script")
+    print("   Install with: pip install pandas")
+    exit(1)
 
 
 def merge_results():
@@ -53,10 +62,15 @@ def merge_results():
     seen = set()
     unique_results = []
     duplicates = 0
+    missing_ids = 0
     
     for r in all_results:
         iid = r.get('instance_id')
-        if iid and iid not in seen:
+        if not iid:
+            # Track results with missing instance_id separately
+            missing_ids += 1
+            unique_results.append(r)
+        elif iid not in seen:
             seen.add(iid)
             unique_results.append(r)
         else:
@@ -65,6 +79,8 @@ def merge_results():
     print(f"   - Unique instances: {len(unique_results)}")
     if duplicates > 0:
         print(f"   - Duplicates removed: {duplicates}")
+    if missing_ids > 0:
+        print(f"   - Results with missing IDs: {missing_ids}")
     
     # Count successful vs errors
     successful = [r for r in unique_results if not r.get('errors')]
@@ -153,11 +169,21 @@ def merge_results():
     csv_size = Path(csv_file).stat().st_size / 1024
     print(f"   {csv_file} ({csv_size:.1f} KB)")
     
-    # Summary statistics
+    # Summary statistics (filter out -1 values for accurate metrics)
     print(f"\n📈 Summary Statistics:")
     print(f"   Total instances: {len(df)}")
-    print(f"   Average DFG-GED: {df['dfg_ged_avg'].mean():.2f}")
-    print(f"   Max DFG-GED: {df['dfg_ged_max'].max():.2f}")
+    
+    # Filter out -1 (missing) values before calculating averages
+    dfg_avg_valid = df[df['dfg_ged_avg'] != -1]['dfg_ged_avg']
+    dfg_max_valid = df[df['dfg_ged_max'] != -1]['dfg_ged_max']
+    
+    if len(dfg_avg_valid) > 0:
+        print(f"   Average DFG-GED: {dfg_avg_valid.mean():.2f} ({len(dfg_avg_valid)} valid)")
+        print(f"   Max DFG-GED: {dfg_max_valid.max():.2f}")
+    else:
+        print(f"   Average DFG-GED: N/A (no valid metrics)")
+        print(f"   Max DFG-GED: N/A")
+    
     print(f"   Average scope size: {df['scope_size'].mean():.1f} files")
     print(f"   Average analysis time: {df['analysis_time'].mean():.1f}s")
     
