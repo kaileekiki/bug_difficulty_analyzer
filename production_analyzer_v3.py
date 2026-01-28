@@ -94,17 +94,20 @@ class ProductionBugAnalyzerV3(ProductionBugAnalyzerV2):
         
         try:
             # Extract instance info
-            repo_identifier = instance.get('repo', '')  # "astropy/astropy"
+            repo_field = instance.get('repo', '')  # Can be "astropy/astropy" or "https://github.com/astropy/astropy"
             base_commit = instance.get('base_commit', '')
             patch = instance.get('patch', '')
             
-            if not repo_identifier or not base_commit or not patch:
+            if not repo_field or not base_commit or not patch:
                 results['errors'].append("Missing required fields: repo, base_commit, or patch")
                 return results
             
-            # Construct proper GitHub URL
-            repo_url = f"https://github.com/{repo_identifier}.git"
-            repo_name = repo_identifier.replace('/', '_')  # "astropy_astropy"
+            # Normalize repository URL (handles both "owner/repo" and full URLs)
+            repo_url, repo_name = self.normalize_repo_url(repo_field)
+            
+            # Extract owner/repo identifier for results
+            # Remove https://github.com/ and .git suffix to get "owner/repo"
+            repo_identifier = repo_url.replace('https://github.com/', '').replace('.git', '')
             
             results['repo_name'] = repo_name
             results['base_commit'] = base_commit
