@@ -1,4 +1,0 @@
-instance_id,repo,analysis_time,ast_ged,dfg_ged,pdg_ged,cfg_ged,cpg_ged,callgraph_ged,loc_added,loc_deleted,token_distance,cyclomatic_delta,halstead_delta,scope_changes,type_changes,exception_changes
-mock-test-1,test/repo,0.009446144104003906,16,2.5,2.5,0.0,2.5,0.0,4,0,14,2,2.3571428571428577,0,0,0
-mock-test-2,test/repo,0.008409261703491211,16,2.5,2.5,0.0,2.5,0.0,4,0,14,2,2.3571428571428577,0,0,0
-mock-test-3,test/repo,0.008367061614990234,16,2.5,2.5,0.0,2.5,0.0,4,0,14,2,2.3571428571428577,0,0,0
