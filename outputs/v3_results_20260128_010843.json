@@ -1,0 +1,46 @@
+{
+  "pipeline_version": "v3",
+  "scope_config": {
+    "depth": 3,
+    "top_k_secondary": 5
+  },
+  "total_analyzed": 1,
+  "total_errors": 0,
+  "elapsed_time": 0.47794651985168457,
+  "results": [
+    {
+      "instance_id": "mock-000",
+      "analysis_time": 0.47792816162109375,
+      "scope": {
+        "primary": [
+          "test_0.py"
+        ],
+        "secondary": [],
+        "direct_imports": [],
+        "total_size": 1
+      },
+      "metrics": {
+        "num_files_analyzed": 1,
+        "num_changed_files": 1,
+        "num_context_files": 0,
+        "changed_files_metrics": {
+          "all_values": {},
+          "summary": {}
+        },
+        "context_files_metrics": {},
+        "overall_metrics": {
+          "all_values": {},
+          "summary": {}
+        }
+      },
+      "errors": [],
+      "repo_name": "octocat_Hello-World",
+      "base_commit": "master",
+      "num_changed_files": 1,
+      "changed_files": [
+        "test_0.py"
+      ]
+    }
+  ],
+  "errors": []
+}
