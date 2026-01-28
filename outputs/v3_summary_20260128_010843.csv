@@ -1,2 +1,0 @@
-instance_id,repo_name,num_changed_files,scope_size,primary_files,secondary_files,direct_imports,num_files_analyzed,num_context_files,dfg_ged_sum,dfg_ged_avg,dfg_ged_max,ast_ged_sum,ast_ged_avg,ast_ged_max,cfg_ged_sum,cfg_ged_avg,cfg_ged_max,analysis_time,has_errors
-mock-000,octocat_Hello-World,1,1,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0.47792816162109375,False
