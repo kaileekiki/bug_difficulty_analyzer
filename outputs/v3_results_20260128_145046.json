@@ -1,0 +1,864 @@
+{
+  "pipeline_version": "v3",
+  "scope_config": {
+    "depth": 3,
+    "top_k_secondary": 5
+  },
+  "total_analyzed": 50,
+  "total_errors": 50,
+  "elapsed_time": 0.4904501438140869,
+  "results": [
+    {
+      "instance_id": "scikit-learn__scikit-learn-10844",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "97523985b39ecde369d83352d7c3baf403b60a22"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10908",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "67d06b18c68ee4452768f8a1e868565dd4354abf"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11310",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "553b5fb8f84ba05c8397f26dd079deece2b05029"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11578",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "dd69361a0d9c6ccde0d2353b00b86e0e7541a3e3"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12585",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "bfc4a566423e036fbdc9fb02765fd893e4860c85"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12682",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "d360ffa7c5896a91ae498b3fb9cf464464ce8f34"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12973",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "a7b8b9e9e16d4e15fabda5ae615086c2e1c47d8a"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "9f0b959a8c9195d1b6e203f08b698e052b426ca9"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13135",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "a061ada48efccf0845acae17009553e01764452b"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "1c8668b0a021832386470ddf740d834e02c66f69"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13328",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "37b0e66c871e8fb032a9c7086b2a1d5419838154"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "a62775e99f2a5ea3d51db7160fad783f6cd8a4c5"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "3aefc834dce72e850bff48689bea3c7dff5f3fad"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13779",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "b34751b7ed02b2cfcc36037fb729d4360480a299"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14053",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "6ab8c86c383dd847a1be7103ad115f174fe23ffd"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14087",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "a5743ed36fbd3fbc8e351bdab16561fbfca7dfa1"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "3d997697fdd166eff428ea9fd35734b6a8ba113e"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "d49a6f13af2f22228d430ac64ac2b518937800d0"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14629",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "4aded39b5663d943f6a4809abacfa9cae3d7fb6a"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14710",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "4b6273b87442a4437d8b3873ea3022ae163f4fdf"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14894",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "fdbaa58acbead5a254f2e6d597dc1ab3b947f4c6"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14983",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "06632c0d185128a53c57ccc73b25b6408e90bb89"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-15100",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "af8a6e592a1a15d92d77011856d5aa0ec4db4c6c"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "f9a1cf072da9d7375d6c2163f68a6038b13b310f"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25232",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "f7eea978097085a6781a0e92fc14ba7712a52d75"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "2c867b8f822eb7a684f0d5c4359e4426e1c9cfe0"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25931",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "e3d1f9ac39e4bf0f31430e779acc50fb05fe1b64"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25973",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "10dbc142bd17ccf7bd38eec2ac04b52ce0d1009e"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-26194",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "e886ce4e1444c61b865e7839c9cff5464ee20ace"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-26323",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "586f4318ffcdfbd9a1093f35ad43e81983740b66"
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "scikit-learn_scikit-learn",
+      "base_commit": "3eacf948e0f95ef957862568d87ce082f378e186"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10323",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "31eba1a76dd485dc633cae48227b46879eda5df4"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10435",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "f1061c012e214f16fd8790dec3c283d787e3daa8"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10449",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "36367765fe780f962bba861bf368a765380bbc68"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10466",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "cab2d93076d0cca7c53fac885f927dde3e2a5fec"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10614",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "ac2b7599d212af7d04649959ce6926c63c3133fa"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10673",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "f35d2a6cc726f97d0e859ca7a0e1729f7da8a6c8"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11445",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "71db08c05197545944949d5aa76cd340e7143627"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11510",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "6cb783c0024a873722952a67ebb9f41771c8eb6d"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7440",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "9bb204dcabe6ba0fc422bf4a45ad0c79c680d90b"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7454",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "aca3f825f2e4a8817190f3c885a242a285aa0dba"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7462",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "b3e26a6c851133b82b50f4b68b53692076574d13"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7590",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "2e506c5ab457cba743bb47eb5b8c8eb9dd51d23d"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7748",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "9988d5ce267bf0df4791770b469431b1fb00dcdd"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7757",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "212fd67b9f0b4fae6a7c3501fdf1a9a5b2801329"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7889",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "ec9af606c6cfa515f946d74da9b51574f2f9b16f"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7910",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "27ac10de04697e2372d31db5548e56a7c6d9265d"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7985",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "f30284ef926ebaf04b176f21b421e2dffc679792"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8035",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "5e6da19f0e44a0ae83944fb6ce18f18f781e1a6e"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8056",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "e188d56ed1248dead58f3f8018c0e9a3f99193f7"
+    }
+  ],
+  "errors": [
+    {
+      "instance_id": "scikit-learn__scikit-learn-10844",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-10908",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11310",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-11578",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12585",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12682",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-12973",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13124",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13135",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13142",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13328",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13439",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-13779",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14053",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14087",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14141",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14496",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14629",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14710",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14894",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-14983",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-15100",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25102",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25232",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25931",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-25973",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-26194",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-26323",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "scikit-learn__scikit-learn-9288",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'scikit-learn/scikit-learn' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10323",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10435",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10449",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10466",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10614",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-10673",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11445",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-11510",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7440",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7454",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7462",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7590",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7748",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7757",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7889",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7910",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-7985",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8035",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8056",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    }
+  ]
+}

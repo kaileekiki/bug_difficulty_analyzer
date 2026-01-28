@@ -1,0 +1,347 @@
+{
+  "count": 20,
+  "results": [
+    {
+      "instance_id": "django__django-17087",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "django_django",
+      "base_commit": "4a72da71001f154ea60906a2f74898d32b7322a7"
+    },
+    {
+      "instance_id": "django__django-7530",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "django_django",
+      "base_commit": "f8fab6f90233c7114d642dfe01a4e6d4cb14ee7d"
+    },
+    {
+      "instance_id": "django__django-9296",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "django_django",
+      "base_commit": "84322a29ce9b0940335f8ab3d60e55192bef1e50"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-13989",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "a3e2897bfaf9eaac1d6649da535c4e721c89fa69"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-14623",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "d65c9ca20ddf81ef91199e6d819f9d3506ef477c"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20488",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "b7ce415c15eb39b026a097a2865da73fbcf15c9c"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20676",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "6786f437df54ca7780a047203cbcfaa1db8dc542"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "a0d2e399729d36499a1924e5ca5bc067c8396810"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20859",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "64619e53e9d0ed417daba287ac0d3a06943a54d5"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "f0632c0fc7339f68e992ed63ae4cfac76cd41aad"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22719",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "a2a1b0a11b993fe5f8fab64b6161e99243a6393c"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "c6c7ec1978c22ae2c704555a873d0ec6e1e2eaa8"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22871",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "a7b7260bf06c20d408215d95ce20a1a01c12e5b1"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23299",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "3eadeacc06c9f2ddcdac6ae39819faa9fbee9e39"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23314",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "97fc1154992f64cfb2f86321155a7404efeb2d8a"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23412",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "f06c2c3abdaf4b90285ce5ca7fedbb8ace715911"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23476",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "33a0599711d26dc2b79f851c6daed4947df7c167"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24026",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "14c96b510ebeba40f573e512299b1976f35b620e"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "af39f1edffcd828f05cfdd04f2e59506bb4a27bc"
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24177",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "matplotlib_matplotlib",
+      "base_commit": "493d608e39d32a67173c23a7bbc47d6bfedcef61"
+    }
+  ],
+  "errors": [
+    {
+      "instance_id": "django__django-17087",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "django__django-7530",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "django__django-9296",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-13989",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-14623",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20488",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20676",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20826",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-20859",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-21568",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22719",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22865",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-22871",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23299",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23314",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23412",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-23476",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24026",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24149",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "matplotlib__matplotlib-24177",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'matplotlib/matplotlib' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    }
+  ]
+}

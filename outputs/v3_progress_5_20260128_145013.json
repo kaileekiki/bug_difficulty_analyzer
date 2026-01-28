@@ -1,0 +1,92 @@
+{
+  "count": 5,
+  "results": [
+    {
+      "instance_id": "django__django-15572",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "django_django",
+      "base_commit": "0b31e024873681e187b574fe1c4afe5e48aeeecf"
+    },
+    {
+      "instance_id": "django__django-15629",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "django_django",
+      "base_commit": "694cf458f16b8d340a3195244196980b2dec34fd"
+    },
+    {
+      "instance_id": "django__django-15695",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "django_django",
+      "base_commit": "647480166bfe7532e8c471fef0146e3a17e6c0c9"
+    },
+    {
+      "instance_id": "django__django-15731",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "django_django",
+      "base_commit": "93cedc82f29076c824d476354527af1150888e4f"
+    },
+    {
+      "instance_id": "django__django-15732",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "django_django",
+      "base_commit": "ce69e34bd646558bb44ea92cecfd98b345a0b3e0"
+    }
+  ],
+  "errors": [
+    {
+      "instance_id": "django__django-15572",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "django__django-15629",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "django__django-15695",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "django__django-15731",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "django__django-15732",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'django/django' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    }
+  ]
+}

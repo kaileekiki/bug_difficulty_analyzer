@@ -1,0 +1,92 @@
+{
+  "count": 5,
+  "results": [
+    {
+      "instance_id": "sympy__sympy-15599",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "5e17a90c19f7eecfa10c1ab872648ae7e2131323"
+    },
+    {
+      "instance_id": "sympy__sympy-15809",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "28d913d3cead6c5646307ffa6540b21d65059dfd"
+    },
+    {
+      "instance_id": "sympy__sympy-15875",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "b506169ad727ee39cb3d60c8b3ff5e315d443d8e"
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "701441853569d370506514083b995d11f9a130bd"
+    },
+    {
+      "instance_id": "sympy__sympy-16450",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "aefdd023dc4f73c441953ed51f5f05a076f0862f"
+    }
+  ],
+  "errors": [
+    {
+      "instance_id": "sympy__sympy-15599",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-15809",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-15875",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-15976",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-16450",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    }
+  ]
+}

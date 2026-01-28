@@ -1,0 +1,177 @@
+{
+  "count": 10,
+  "results": [
+    {
+      "instance_id": "sphinx-doc__sphinx-8120",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "795747bdb6b8fb7d717d5bbfc2c3316869e66a73"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "b428cd2404675475a5c3dc2a2b0790ba57676202"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8269",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "1e2ccd8f0eca0870cf6f8fce6934e2da8eba9b72"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8459",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "68aa4fb29e7dfe521749e1e14f750d7afabb3481"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8475",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "3ea1ec84cc610f7a9f4f6b354e264565254923ff"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8548",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "dd1615c59dc6fff633e27dbb3861f2d27e1fb976"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8551",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "57ed10c68057c96491acbd3e62254ccfaf9e3861"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "07983a5a8704ad91ae855218ecbda1c8598200ca"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8595",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "b19bce971e82f2497d67fdacdeca8db08ae0ba56"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8621",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "21698c14461d27933864d73e6fba568a154e83b3"
+    }
+  ],
+  "errors": [
+    {
+      "instance_id": "sphinx-doc__sphinx-8120",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8269",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8459",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8475",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8548",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8551",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8595",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8621",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    }
+  ]
+}

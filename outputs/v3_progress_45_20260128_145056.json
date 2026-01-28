@@ -1,0 +1,772 @@
+{
+  "count": 45,
+  "results": [
+    {
+      "instance_id": "sphinx-doc__sphinx-8120",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "795747bdb6b8fb7d717d5bbfc2c3316869e66a73"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "b428cd2404675475a5c3dc2a2b0790ba57676202"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8269",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "1e2ccd8f0eca0870cf6f8fce6934e2da8eba9b72"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8459",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "68aa4fb29e7dfe521749e1e14f750d7afabb3481"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8475",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "3ea1ec84cc610f7a9f4f6b354e264565254923ff"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8548",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "dd1615c59dc6fff633e27dbb3861f2d27e1fb976"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8551",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "57ed10c68057c96491acbd3e62254ccfaf9e3861"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "07983a5a8704ad91ae855218ecbda1c8598200ca"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8595",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "b19bce971e82f2497d67fdacdeca8db08ae0ba56"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8621",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "21698c14461d27933864d73e6fba568a154e83b3"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8638",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "4b452338f914d4f6b54704222d70ae8a746e3db5"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8721",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "82ef497a8c88f0f6e50d84520e7276bfbf65025d"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9229",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "876fa81e0a038cda466925b85ccf6c5452e0f685"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9230",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "567ff22716ac258b9edd2c1711d766b440ac0b11"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "06107f838c28ab6ca6bfc2cc208e15997fcb2146"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9281",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "8ec06e9a1bd862cd713b9db748e039ccc7b3e15b"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9320",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "e05cef574b8f23ab1b57f57e7da6dee509a4e230"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9367",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "6918e69600810a4664e53653d6ff0290c3c4a788"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9461",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "939c7bb7ff7c53a4d27df067cea637540f0e1dad"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9591",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "9ed054279aeffd5b1d0642e2d24a8800389de29f"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9602",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "6c38f68dae221e8cfc70c137974b8b88bd3baaab"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9658",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "232dbe41c5250eb7d559d40438c4743483e95f15"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9673",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "5fb51fb1467dc5eea7505402c3c5d9b378d3b441"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9698",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "f050a7775dfc9000f55d023d36d925a8d02ccfa8"
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9711",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sphinx-doc_sphinx",
+      "base_commit": "81a4fd973d4cfcb25d01a7b0be62cdb28f82406d"
+    },
+    {
+      "instance_id": "sympy__sympy-11618",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "360290c4c401e386db60723ddb0109ed499c9f6e"
+    },
+    {
+      "instance_id": "sympy__sympy-12096",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "d7c3045115693e887bcd03599b7ca4650ac5f2cb"
+    },
+    {
+      "instance_id": "sympy__sympy-12419",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "479939f8c65c8c2908bbedc959549a257a7c0b0b"
+    },
+    {
+      "instance_id": "sympy__sympy-12481",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "c807dfe7569692cad24f02a08477b70c1679a4dd"
+    },
+    {
+      "instance_id": "sympy__sympy-12489",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "aa9780761ad8c3c0f68beeef3a0ce5caac9e100b"
+    },
+    {
+      "instance_id": "sympy__sympy-13031",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "2dfa7457f20ee187fbb09b5b6a1631da4458388c"
+    },
+    {
+      "instance_id": "sympy__sympy-13091",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "d1320814eda6549996190618a21eaf212cfd4d1e"
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "30379ea6e225e37833a764ac2da7b7fadf5fe374"
+    },
+    {
+      "instance_id": "sympy__sympy-13480",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "f57fe3f4b3f2cab225749e1b3b38ae1bf80b62f0"
+    },
+    {
+      "instance_id": "sympy__sympy-13551",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "9476425b9e34363c2d9ac38e9f04aa75ae54a775"
+    },
+    {
+      "instance_id": "sympy__sympy-13615",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "50d8a102f0735da8e165a0369bbb994c7d0592a6"
+    },
+    {
+      "instance_id": "sympy__sympy-13647",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "67e3c956083d0128a621f65ee86a7dacd4f9f19f"
+    },
+    {
+      "instance_id": "sympy__sympy-13757",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "a5e6a101869e027e7930e694f8b1cfb082603453"
+    },
+    {
+      "instance_id": "sympy__sympy-13798",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "7121bdf1facdd90d05b6994b4c2e5b2865a4638a"
+    },
+    {
+      "instance_id": "sympy__sympy-13852",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "c935e1d106743efd5bf0705fbeedbd18fadff4dc"
+    },
+    {
+      "instance_id": "sympy__sympy-13877",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "1659712001810f5fc563a443949f8e3bb38af4bd"
+    },
+    {
+      "instance_id": "sympy__sympy-13878",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "7b127bdf71a36d85216315f80c1b54d22b060818"
+    },
+    {
+      "instance_id": "sympy__sympy-13974",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "84c125972ad535b2dfb245f8d311d347b45e5b8a"
+    },
+    {
+      "instance_id": "sympy__sympy-14248",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "9986b38181cdd556a3f3411e553864f11912244e"
+    },
+    {
+      "instance_id": "sympy__sympy-14531",
+      "analysis_time": 0.0,
+      "scope": {},
+      "metrics": {},
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ],
+      "repo_name": "sympy_sympy",
+      "base_commit": "205da797006360fc629110937e39a19c9561313e"
+    }
+  ],
+  "errors": [
+    {
+      "instance_id": "sphinx-doc__sphinx-8120",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8265",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8269",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8459",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8475",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8548",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8551",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8593",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8595",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8621",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8638",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-8721",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9229",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9230",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9258",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9281",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9320",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9367",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9461",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9591",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9602",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9658",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9673",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9698",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sphinx-doc__sphinx-9711",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sphinx-doc/sphinx' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-11618",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-12096",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-12419",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-12481",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-12489",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13031",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13091",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13372",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13480",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13551",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13615",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13647",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13757",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13798",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13852",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13877",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13878",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-13974",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-14248",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    },
+    {
+      "instance_id": "sympy__sympy-14531",
+      "errors": [
+        "Clone failed: Clone failed: Git clone failed: fatal: 'sympy/sympy' \uc800\uc7a5\uc18c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4\n"
+      ]
+    }
+  ]
+}
