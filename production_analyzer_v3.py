@@ -94,20 +94,24 @@ class ProductionBugAnalyzerV3(ProductionBugAnalyzerV2):
         
         try:
             # Extract instance info
-            repo_url = instance.get('repo', '')
+            repo_identifier = instance.get('repo', '')  # "astropy/astropy"
             base_commit = instance.get('base_commit', '')
             patch = instance.get('patch', '')
             
-            if not repo_url or not base_commit or not patch:
+            if not repo_identifier or not base_commit or not patch:
                 results['errors'].append("Missing required fields: repo, base_commit, or patch")
                 return results
             
-            # Parse repository name
-            repo_name = self._parse_repo_name(repo_url)
+            # Construct proper GitHub URL
+            repo_url = f"https://github.com/{repo_identifier}.git"
+            repo_name = repo_identifier.replace('/', '_')  # "astropy_astropy"
+            
             results['repo_name'] = repo_name
             results['base_commit'] = base_commit
+            results['repo'] = repo_identifier
             
-            print(f"Repository: {repo_name}")
+            print(f"Repository: {repo_identifier}")
+            print(f"GitHub URL: {repo_url}")
             print(f"Base commit: {base_commit[:8]}")
             
             # Step 1: Clone repository
@@ -338,7 +342,7 @@ def test_analyzer_v3():
     
     # Mock instance
     instance = {
-        'repo': 'https://github.com/octocat/Hello-World',
+        'repo': 'octocat/Hello-World',
         'base_commit': 'master',
         'patch': """
 diff --git a/README b/README
