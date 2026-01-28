@@ -36,7 +36,7 @@ diff --git a/test.py b/test.py
 index 123..456 100644
 --- a/test.py
 +++ b/test.py
-@@ -1 +1 @@
+@@ -1,1 +1,1 @@
 -old
 +new
 """
@@ -64,7 +64,7 @@ diff --git a/file.py b/file.py
 index 789..012 100644
 --- a/file.py
 +++ b/file.py
-@@ -1 +1 @@
+@@ -1,1 +1,1 @@
 -before
 +after
 """
