@@ -7,23 +7,26 @@ __pycache__/
 *.egg-info/
 dist/
 build/
-
-# Virtual environments
-venv/
 env/
+venv/
 ENV/
 
-# IDEs
+# Project specific
+repo_cache/          # Cloned repositories
+outputs/             # Analysis results
+datasets/*.json      # Downloaded datasets (large)
+
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 
-# Data and outputs
-datasets/
-outputs/
-repo_cache/
-
-# Temporary files
-*.log
+# OS
 .DS_Store
+Thumbs.db
+
+# Test outputs
+*.log
+test_repo_cache/
+
