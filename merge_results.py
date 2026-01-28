@@ -114,22 +114,35 @@ def merge_results():
         
         # Extract scope info
         scope = result.get('scope', {})
-        row['scope_size'] = len(scope.get('all', []))
+        row['scope_size'] = scope.get('total_size', 0)
         row['primary_files'] = len(scope.get('primary', []))
         row['secondary_files'] = len(scope.get('secondary', []))
         row['direct_imports'] = len(scope.get('direct_imports', []))
         
-        # Extract aggregated metrics
-        metrics = result.get('aggregated_metrics', {})
-        row['dfg_ged_sum'] = metrics.get('dfg_ged_sum', -1)
-        row['dfg_ged_avg'] = metrics.get('dfg_ged_avg', -1)
-        row['dfg_ged_max'] = metrics.get('dfg_ged_max', -1)
-        row['ast_ged_sum'] = metrics.get('ast_ged_sum', -1)
-        row['ast_ged_avg'] = metrics.get('ast_ged_avg', -1)
-        row['ast_ged_max'] = metrics.get('ast_ged_max', -1)
-        row['cfg_ged_sum'] = metrics.get('cfg_ged_sum', -1)
-        row['cfg_ged_avg'] = metrics.get('cfg_ged_avg', -1)
-        row['cfg_ged_max'] = metrics.get('cfg_ged_max', -1)
+        # Extract metrics from the actual structure
+        metrics = result.get('metrics', {})
+        overall = metrics.get('overall_metrics', {})
+        summary = overall.get('summary', {})
+        
+        # DFG-GED
+        graph_metrics = summary.get('graph', {})
+        dfg_ged = graph_metrics.get('DFG_GED', {})
+        row['dfg_ged_sum'] = dfg_ged.get('sum', -1)
+        row['dfg_ged_avg'] = dfg_ged.get('avg', -1)
+        row['dfg_ged_max'] = dfg_ged.get('max', -1)
+        
+        # AST-GED
+        ast_metrics = summary.get('ast', {})
+        ast_ged = ast_metrics.get('AST_GED', {})
+        row['ast_ged_sum'] = ast_ged.get('sum', -1)
+        row['ast_ged_avg'] = ast_ged.get('avg', -1)
+        row['ast_ged_max'] = ast_ged.get('max', -1)
+        
+        # CFG-GED
+        cfg_ged = graph_metrics.get('CFG_GED', {})
+        row['cfg_ged_sum'] = cfg_ged.get('sum', -1)
+        row['cfg_ged_avg'] = cfg_ged.get('avg', -1)
+        row['cfg_ged_max'] = cfg_ged.get('max', -1)
         
         csv_rows.append(row)
     
