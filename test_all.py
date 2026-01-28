@@ -24,7 +24,8 @@ tests = [
     ("Basic Metrics", "metrics/basic_metrics.py"),
     ("AST Metrics", "metrics/ast_metrics.py"),
     ("Git Diff Parser", "utils/git_diff_parser.py"),
-    ("Production Analyzer", "production_analyzer.py"),
+    ("V2 Analysis", "test_v2_analysis.py"),
+    ("V3 Scope", "test_v3_scope.py"),
 ]
 
 passed = 0
