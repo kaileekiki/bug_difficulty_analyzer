@@ -61,6 +61,78 @@ class ProductionBugAnalyzerV2:
         # Parsers
         self.diff_parser = GitDiffParser()
     
+    @staticmethod
+    def normalize_repo_url(repo_field: str) -> tuple[str, str]:
+        """
+        Normalize repository field to GitHub URL and repo name.
+        
+        Handles multiple formats:
+        - Repository identifier: "sympy/sympy" -> ("https://github.com/sympy/sympy.git", "sympy_sympy")
+        - Full URL: "https://github.com/django/django" -> ("https://github.com/django/django.git", "django_django")
+        - URL with .git: "https://github.com/scikit-learn/scikit-learn.git" -> (same, "scikit-learn_scikit-learn")
+        
+        Args:
+            repo_field: Repository field from SWE-bench dataset (GitHub repositories only)
+            
+        Returns:
+            Tuple of (repo_url, repo_name) where:
+            - repo_url: Full GitHub clone URL with .git suffix
+            - repo_name: Repository name for caching (owner_repo)
+            
+        Raises:
+            ValueError: If the URL is not a valid GitHub repository URL
+        """
+        repo_field = repo_field.strip()
+        
+        # Check if it's already a URL
+        if repo_field.startswith('http://') or repo_field.startswith('https://'):
+            # Validate it's a GitHub URL
+            if 'github.com' not in repo_field.lower():
+                raise ValueError(f"Only GitHub repositories are supported. Got: {repo_field}")
+            
+            # Extract from URL
+            # Remove .git suffix if present
+            url_base = repo_field.rstrip('/')
+            if url_base.endswith('.git'):
+                url_base = url_base[:-4]
+            
+            # Extract owner/repo from URL
+            # Expected format: https://github.com/owner/repo
+            parts = url_base.split('/')
+            if len(parts) >= 2:
+                owner = parts[-2]
+                repo = parts[-1]
+                
+                # Validate we got meaningful owner/repo
+                if not owner or not repo or owner == 'github.com':
+                    raise ValueError(f"Invalid GitHub URL format. Expected https://github.com/owner/repo, got: {repo_field}")
+                
+                repo_identifier = f"{owner}/{repo}"
+            else:
+                raise ValueError(f"Invalid GitHub URL format. Expected https://github.com/owner/repo, got: {repo_field}")
+            
+            # Construct proper URL with .git
+            repo_url = f"{url_base}.git"
+            repo_name = repo_identifier.replace('/', '_')
+            
+            return repo_url, repo_name
+        else:
+            # Assume it's in "owner/repo" format
+            repo_identifier = repo_field
+            
+            # Validate format
+            if '/' not in repo_identifier:
+                raise ValueError(f"Invalid repository identifier. Expected 'owner/repo' format, got: {repo_identifier}")
+            
+            parts = repo_identifier.split('/')
+            if len(parts) != 2 or not parts[0] or not parts[1]:
+                raise ValueError(f"Invalid repository identifier. Expected 'owner/repo' format, got: {repo_identifier}")
+            
+            repo_url = f"https://github.com/{repo_identifier}.git"
+            repo_name = repo_identifier.replace('/', '_')
+            
+            return repo_url, repo_name
+    
     def analyze_instance(self, instance: Dict[str, Any], 
                         instance_id: str = "unknown") -> Dict[str, Any]:
         """
@@ -101,17 +173,20 @@ class ProductionBugAnalyzerV2:
         
         try:
             # Extract instance info
-            repo_identifier = instance.get('repo', '')  # "astropy/astropy"
+            repo_field = instance.get('repo', '')  # Can be "astropy/astropy" or "https://github.com/astropy/astropy"
             base_commit = instance.get('base_commit', '')
             patch = instance.get('patch', '')
 
-            if not repo_identifier or not base_commit or not patch:
+            if not repo_field or not base_commit or not patch:
                 results['errors'].append("Missing required fields: repo, base_commit, or patch")
                 return results
 
-            # Construct proper GitHub URL
-            repo_url = f"https://github.com/{repo_identifier}.git"
-            repo_name = repo_identifier.replace('/', '_')  # "astropy_astropy"
+            # Normalize repository URL (handles both "owner/repo" and full URLs)
+            repo_url, repo_name = self.normalize_repo_url(repo_field)
+            
+            # Extract owner/repo identifier for results
+            # Remove https://github.com/ and .git suffix to get "owner/repo"
+            repo_identifier = repo_url.replace('https://github.com/', '').replace('.git', '')
 
             results['repo_name'] = repo_name
             results['base_commit'] = base_commit
