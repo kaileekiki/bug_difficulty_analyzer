@@ -93,6 +93,12 @@ echo ""
 echo "Test 5: Script structure validation"
 SCRIPT_VALID=true
 
+# Check for set -o pipefail
+if ! grep -q "set -o pipefail" run_full_analysis.sh; then
+    echo "  - Missing 'set -o pipefail' to catch pipe failures"
+    SCRIPT_VALID=false
+fi
+
 # Check for START_BATCH variable
 if ! grep -q "START_BATCH=1" run_full_analysis.sh; then
     echo "  - Missing START_BATCH initialization"

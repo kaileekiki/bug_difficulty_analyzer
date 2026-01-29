@@ -3,6 +3,7 @@
 # Processes 500 instances in 10 batches of 50
 
 set -e
+set -o pipefail  # Ensure pipe failures are caught
 
 LOG_FILE="v3_full_$(date +%Y%m%d_%H%M%S).log"
 BATCH_SIZE=50
