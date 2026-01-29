@@ -26,14 +26,18 @@ if [ $# -gt 0 ]; then
         echo "❌ Error: Batch number must be between 1 and $TOTAL_BATCHES"
         exit 1
     fi
-    
-    echo "📍 Resuming from batch $START_BATCH (requested by user)"
-    echo ""
 fi
 
 echo "======================================================================" | tee -a $LOG_FILE
 echo "SWE-BENCH VERIFIED FULL ANALYSIS (V3)" | tee -a $LOG_FILE
 echo "======================================================================" | tee -a $LOG_FILE
+
+# Display resume message if starting from non-default batch
+if [ $START_BATCH -gt 1 ]; then
+    echo "📍 Resuming from batch $START_BATCH (requested by user)" | tee -a $LOG_FILE
+    echo "" | tee -a $LOG_FILE
+fi
+
 echo "Configuration:" | tee -a $LOG_FILE
 echo "  - Total instances: 500" | tee -a $LOG_FILE
 echo "  - Batch size: $BATCH_SIZE" | tee -a $LOG_FILE
