@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hugging Face에서 SWE-bench Verified 데이터셋 로드
+Load SWE-bench Verified dataset from Hugging Face
 """
 
 import json
@@ -24,10 +24,10 @@ class SWEBenchLoader:
     def __init__(self, cache_dir: str = "datasets", dataset_dir: str = None):
         """
         Args:
-            cache_dir: 캐시 디렉토리 (기본값: "datasets")
-            dataset_dir: 레거시 호환성을 위한 파라미터 (cache_dir와 동일)
+            cache_dir: Cache directory (default: "datasets")
+            dataset_dir: Legacy compatibility parameter (same as cache_dir)
         """
-        # dataset_dir이 제공되면 우선 사용 (하위 호환성)
+        # Prioritize dataset_dir if provided (backward compatibility)
         if dataset_dir is not None:
             cache_dir = dataset_dir
             
@@ -102,11 +102,11 @@ class SWEBenchLoader:
         return data
     
     def get_cache_path(self) -> Path:
-        """캐시 파일 경로 반환"""
+        """Return cache file path"""
         return self.cache_file
     
     def is_cached(self) -> bool:
-        """캐시 파일이 존재하는지 확인"""
+        """Check if cache file exists"""
         return self.cache_file.exists()
     
     def create_mock_dataset(self, n: int = 10) -> List[Dict[str, Any]]:
