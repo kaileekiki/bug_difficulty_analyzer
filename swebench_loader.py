@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Hugging Face에서 SWE-bench Verified 데이터셋 로드
+Load SWE-bench Verified dataset from Hugging Face
 """
 
 import json
@@ -8,13 +8,26 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 class SWEBenchLoader:
+    """
+    Loader for SWE-bench Verified dataset from Hugging Face.
+    
+    Features:
+    - Auto-downloads dataset on first use
+    - Caches dataset locally as JSON
+    - Reuses cache on subsequent runs
+    
+    Usage:
+        loader = SWEBenchLoader(cache_dir="datasets")
+        dataset = loader.load_dataset()  # Auto-downloads if needed
+    """
+    
     def __init__(self, cache_dir: str = "datasets", dataset_dir: str = None):
         """
         Args:
-            cache_dir: 캐시 디렉토리 (기본값: "datasets")
-            dataset_dir: 레거시 호환성을 위한 파라미터 (cache_dir와 동일)
+            cache_dir: Cache directory (default: "datasets")
+            dataset_dir: Legacy compatibility parameter (same as cache_dir)
         """
-        # dataset_dir이 제공되면 우선 사용 (하위 호환성)
+        # Prioritize dataset_dir if provided (backward compatibility)
         if dataset_dir is not None:
             cache_dir = dataset_dir
             
@@ -23,67 +36,77 @@ class SWEBenchLoader:
         self.cache_file = self.cache_dir / "swebench_verified.json"
     
     def download_dataset(self, force: bool = False) -> Path:
-        """Hugging Face에서 SWE-bench Verified 다운로드"""
+        """Download SWE-bench Verified from Hugging Face"""
         if self.cache_file.exists() and not force:
-            print(f"✅ 데이터셋이 이미 캐시됨: {self.cache_file}")
+            print(f"✅ Dataset already cached: {self.cache_file}")
             return self.cache_file
         
-        print("📥 Hugging Face에서 SWE-bench Verified 다운로드 중...")
-        print(f"   저장 위치: {self.cache_file}")
+        print("=" * 70)
+        print("📥 Downloading SWE-bench Verified from Hugging Face...")
+        print(f"   This may take 2-5 minutes on first run")
+        print(f"   Cache location: {self.cache_file}")
+        print("=" * 70)
         
         try:
             from datasets import load_dataset
             
-            # Hugging Face에서 로드
+            # Load from Hugging Face
+            print("🔄 Fetching dataset from princeton-nlp/SWE-bench_Verified...")
             dataset = load_dataset("princeton-nlp/SWE-bench_Verified", split="test")
             
-            print(f"✅ {len(dataset)}개 인스턴스 로드 완료")
+            print(f"✅ Downloaded {len(dataset)} instances")
             
-            # dict 리스트로 변환
+            # Convert to list of dicts
+            print("🔄 Converting to JSON format...")
             data = [dict(item) for item in dataset]
             
-            # 캐시에 저장
-            print("💾 JSON 파일로 저장 중...")
+            # Save to cache
+            print(f"💾 Saving to cache: {self.cache_file}")
             with open(self.cache_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, indent=2, ensure_ascii=False)
             
             file_size_mb = self.cache_file.stat().st_size / 1024 / 1024
-            print(f"✅ 저장 완료: {self.cache_file}")
-            print(f"📊 파일 크기: {file_size_mb:.2f} MB")
+            print(f"✅ Cache saved successfully")
+            print(f"📊 File size: {file_size_mb:.2f} MB")
+            print("=" * 70)
             
             return self.cache_file
             
         except ImportError:
-            print("❌ 'datasets' 라이브러리가 없습니다")
-            print("   설치 명령어: pip install datasets")
+            print("❌ ERROR: 'datasets' library not installed")
+            print("   Install with: pip install datasets")
             raise
         except Exception as e:
-            print(f"❌ 다운로드 실패: {e}")
-            print("\n💡 대안: 수동으로 다운로드")
+            print(f"❌ Download failed: {e}")
+            print("\n💡 Alternative: Manual download")
             print("   https://huggingface.co/datasets/princeton-nlp/SWE-bench_Verified")
             raise
     
     def load_dataset(self) -> List[Dict[str, Any]]:
-        """캐시된 데이터셋 로드"""
-        if not self.cache_file.exists():
-            raise FileNotFoundError(
-                f"데이터셋을 찾을 수 없음: {self.cache_file}\n"
-                f"먼저 download_dataset()을 실행하세요"
-            )
+        """
+        Load SWE-bench dataset from cache or download if needed.
         
-        print(f"📂 데이터셋 로딩 중: {self.cache_file}")
+        Returns:
+            List of dataset instances
+        """
+        # Auto-download if cache doesn't exist
+        if not self.cache_file.exists():
+            print(f"📥 Dataset cache not found, downloading automatically...")
+            self.download_dataset()
+        
+        print(f"📂 Loading dataset from: {self.cache_file}")
         with open(self.cache_file, encoding='utf-8') as f:
             data = json.load(f)
         
-        print(f"✅ {len(data)}개 인스턴스 로드됨")
+        print(f"✅ Loaded {len(data)} instances")
         return data
     
     def get_cache_path(self) -> Path:
-        """캐시 파일 경로 반환"""
+        """Return cache file path"""
         return self.cache_file
     
     def is_cached(self) -> bool:
-        """캐시 파일이 존재하는지 확인"""
+        """Check if cache file exists"""
         return self.cache_file.exists()
     
     def create_mock_dataset(self, n: int = 10) -> List[Dict[str, Any]]:
