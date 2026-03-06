@@ -53,7 +53,7 @@ class HybridGEDCalculator:
         
         # Determine graph size category
         max_size = max(len(g1.nodes), len(g2.nodes))
-        
+
         # Empty graph handling
         if len(g1.nodes) == 0 and len(g2.nodes) == 0:
             return {
@@ -87,33 +87,27 @@ class HybridGEDCalculator:
         
         # Adaptive beam width selection
         if max_size < 20:
-            beam_width = 100  # Near-exact for tiny graphs
+            beam_width = 100  # Tiny: near-exact
             category = 'tiny'
         elif max_size < 50:
-            beam_width = 50   # Very accurate for small graphs
+            beam_width = 50   # Small: very accurate
             category = 'small'
         elif max_size < 100:
-            beam_width = 20   # Accurate for medium graphs
+            beam_width = 20   # Medium: accurate
             category = 'medium'
         elif max_size < 200:
-            beam_width = 10   # Fast for large graphs
+            beam_width = 10   # Large: fast
             category = 'large'
         else:
-            # Huge graphs: use fast heuristic
-            return self._fast_heuristic(g1, g2, start_time, 'huge')
+            beam_width = 1    # Huge: greedy
+            category = 'huge'
         
         # Try with selected beam width
         try:
             ged_computer = BeamSearchGED(beam_width=beam_width)
             result = ged_computer.compute(g1, g2)
-            
+
             computation_time = time.time() - start_time
-            
-            # Timeout check
-            if computation_time > self.max_time:
-                print(f"  ⚠️  {metric_name} timeout ({computation_time:.1f}s), using fallback")
-                return self._fast_heuristic(g1, g2, start_time, category + '_timeout')
-            
             return {
                 'ged': result['ged'],
                 'normalized_ged': result['normalized_ged'],
@@ -122,7 +116,7 @@ class HybridGEDCalculator:
                 'computation_time': computation_time,
                 'graph_size': category
             }
-            
+
         except Exception as e:
             print(f"  ⚠️  {metric_name} error: {e}, using fallback")
             return self._fast_heuristic(g1, g2, start_time, category + '_error')

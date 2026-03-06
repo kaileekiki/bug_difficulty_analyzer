@@ -1,0 +1,31 @@
+{
+  "_comment": "Benchmark registry. Add new datasets here — no code changes needed.",
+  "_schema": {
+    "name":             "Display name shown in logs and output",
+    "hf_dataset":       "HuggingFace dataset ID (org/repo format)",
+    "hf_split":         "Dataset split to load (usually 'test')",
+    "total_instances":  "Approximate instance count used for batch partitioning",
+    "cache_file":       "Local JSON cache filename under datasets/"
+  },
+  "verified": {
+    "name":             "SWE-bench Verified",
+    "hf_dataset":       "princeton-nlp/SWE-bench_Verified",
+    "hf_split":         "test",
+    "total_instances":  500,
+    "cache_file":       "swebench_verified.json"
+  },
+  "full": {
+    "name":             "SWE-bench Full",
+    "hf_dataset":       "princeton-nlp/SWE-bench",
+    "hf_split":         "test",
+    "total_instances":  2294,
+    "cache_file":       "swebench_full.json"
+  },
+  "pro": {
+    "name":             "SWE-bench Pro",
+    "hf_dataset":       "ScaleAI/SWE-bench_Pro",
+    "hf_split":         "test",
+    "total_instances":  731,
+    "cache_file":       "swebench_pro.json"
+  }
+}

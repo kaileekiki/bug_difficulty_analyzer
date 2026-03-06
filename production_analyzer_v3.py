@@ -212,11 +212,12 @@ class ProductionBugAnalyzerV3(ProductionBugAnalyzerV2):
                     is_changed = filepath in changed_files
                     prefix = "CHANGED" if is_changed else "CONTEXT"
                     print(f"\n  Analyzing [{prefix}]: {filepath}")
-                    
+
                     file_analysis = self._analyze_file_pair(
                         filepath,
                         before_files.get(filepath, ""),
-                        after_files.get(filepath, "")
+                        after_files.get(filepath, ""),
+                        skip_graph_metrics=not is_changed
                     )
                     file_analysis['is_changed'] = is_changed
                     file_results.append(file_analysis)

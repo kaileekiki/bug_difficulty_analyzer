@@ -167,6 +167,89 @@ def test_create_mock_dataset():
     print("✅ Test passed: create_mock_dataset works correctly")
 
 
+def test_dataset_type_verified():
+    """Test dataset_type parameter with 'verified'"""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        loader = SWEBenchLoader(cache_dir=tmpdir, dataset_type="verified")
+        
+        assert loader.dataset_type == "verified"
+        assert loader.cache_file == Path(tmpdir) / "swebench_verified.json"
+        assert loader.hf_dataset_name == "princeton-nlp/SWE-bench_Verified"
+        print("✅ Test passed: dataset_type='verified' works correctly")
+
+
+def test_dataset_type_full():
+    """Test dataset_type parameter with 'full'"""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        loader = SWEBenchLoader(cache_dir=tmpdir, dataset_type="full")
+        
+        assert loader.dataset_type == "full"
+        assert loader.cache_file == Path(tmpdir) / "swebench_full.json"
+        assert loader.hf_dataset_name == "princeton-nlp/SWE-bench"
+        print("✅ Test passed: dataset_type='full' works correctly")
+
+
+def test_dataset_type_default():
+    """Test dataset_type defaults to 'verified'"""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        loader = SWEBenchLoader(cache_dir=tmpdir)
+        
+        assert loader.dataset_type == "verified"
+        assert "verified" in str(loader.cache_file)
+        print("✅ Test passed: dataset_type defaults to 'verified'")
+
+
+def test_dataset_type_invalid():
+    """Test that invalid dataset_type raises ValueError"""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        try:
+            loader = SWEBenchLoader(cache_dir=tmpdir, dataset_type="invalid")
+            assert False, "Should have raised ValueError"
+        except ValueError as e:
+            assert "invalid" in str(e).lower()
+            assert "verified" in str(e)
+            assert "full" in str(e)
+            print("✅ Test passed: invalid dataset_type raises ValueError")
+
+
+def test_separate_caches_for_datasets():
+    """Test that verified and full use separate cache files"""
+    with tempfile.TemporaryDirectory() as tmpdir:
+        loader_v = SWEBenchLoader(cache_dir=tmpdir, dataset_type="verified")
+        loader_f = SWEBenchLoader(cache_dir=tmpdir, dataset_type="full")
+        
+        # Create verified cache
+        verified_data = [{"instance_id": "verified-1"}]
+        with open(loader_v.cache_file, 'w') as f:
+            json.dump(verified_data, f)
+        
+        # Create full cache
+        full_data = [{"instance_id": "full-1"}, {"instance_id": "full-2"}]
+        with open(loader_f.cache_file, 'w') as f:
+            json.dump(full_data, f)
+        
+        # Load and verify they're separate
+        v_dataset = loader_v.load_dataset()
+        f_dataset = loader_f.load_dataset()
+        
+        assert len(v_dataset) == 1
+        assert len(f_dataset) == 2
+        assert v_dataset[0]["instance_id"] == "verified-1"
+        assert f_dataset[0]["instance_id"] == "full-1"
+        
+        print("✅ Test passed: verified and full use separate caches")
+
+
+def test_get_dataset_type():
+    """Test get_dataset_type method"""
+    loader_v = SWEBenchLoader(dataset_type="verified")
+    loader_f = SWEBenchLoader(dataset_type="full")
+    
+    assert loader_v.get_dataset_type() == "verified"
+    assert loader_f.get_dataset_type() == "full"
+    print("✅ Test passed: get_dataset_type() works correctly")
+
+
 if __name__ == '__main__':
     print("Running SWEBenchLoader tests...\n")
     
@@ -177,6 +260,12 @@ if __name__ == '__main__':
         test_download_dataset_force_redownload()
         test_is_cached()
         test_create_mock_dataset()
+        test_dataset_type_verified()
+        test_dataset_type_full()
+        test_dataset_type_default()
+        test_dataset_type_invalid()
+        test_separate_caches_for_datasets()
+        test_get_dataset_type()
         
         print("\n" + "="*70)
         print("✅ All tests passed!")
@@ -189,3 +278,5 @@ if __name__ == '__main__':
         import traceback
         traceback.print_exc()
         sys.exit(1)
+
+

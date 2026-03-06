@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Optional, List, Dict, Any
 import time
 import re
+import fcntl
 
 
 class RepositoryManager:
@@ -49,46 +50,89 @@ class RepositoryManager:
             RuntimeError: If clone fails
         """
         repo_path = self.cache_dir / repo_name
-        
-        # Check if already cached
+        lock_file = self.cache_dir / f".{repo_name}.lock"
+
+        # Check if already cached AND valid
         if repo_path.exists() and (repo_path / ".git").exists():
-            print(f"  ✓ Using cached repository: {repo_path}")
-            return repo_path
-        
-        print(f"  📥 Cloning repository: {repo_url}")
-        print(f"     Target: {repo_path}")
-        
-        # Ensure parent directory exists
-        repo_path.parent.mkdir(exist_ok=True, parents=True)
-        
+            # Verify repository is not corrupted
+            try:
+                result = subprocess.run(
+                    ["git", "rev-parse", "--git-dir"],
+                    cwd=repo_path,
+                    capture_output=True,
+                    timeout=5
+                )
+                if result.returncode == 0:
+                    print(f"  ✓ Using cached repository: {repo_path}")
+                    return repo_path
+                else:
+                    print(f"  ⚠️  Cached repository corrupted, removing...")
+                    shutil.rmtree(repo_path)
+            except:
+                print(f"  ⚠️  Cached repository invalid, removing...")
+                if repo_path.exists():
+                    shutil.rmtree(repo_path)
+
+        # Acquire lock to prevent race condition in parallel execution
+        lock_file.parent.mkdir(exist_ok=True, parents=True)
+        lock_fd = None
+
         try:
-            # Try shallow clone first (faster for large repos)
+            # Try to acquire lock (wait for other processes)
+            lock_fd = open(lock_file, 'w')
+            print(f"  🔒 Acquiring clone lock for {repo_name}...")
+
+            max_wait = 600  # 10 minutes
+            start_wait = time.time()
+
+            while True:
+                try:
+                    fcntl.flock(lock_fd.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+                    print(f"  ✓ Lock acquired")
+                    break
+                except BlockingIOError:
+                    elapsed = time.time() - start_wait
+                    if elapsed > max_wait:
+                        raise RuntimeError(f"Timeout waiting for lock on {repo_name}")
+                    if int(elapsed) % 30 == 0:  # Log every 30 seconds
+                        print(f"  ⏳ Waiting for another process to clone ({int(elapsed)}s)...")
+                    time.sleep(5)
+
+            # Check again - another process may have just finished cloning
+            if repo_path.exists() and (repo_path / ".git").exists():
+                result = subprocess.run(
+                    ["git", "rev-parse", "--git-dir"],
+                    cwd=repo_path,
+                    capture_output=True,
+                    timeout=5
+                )
+                if result.returncode == 0:
+                    print(f"  ✓ Another process completed cloning")
+                    return repo_path
+
+            print(f"  📥 Cloning repository (full): {repo_url}")
+            print(f"     Target: {repo_path}")
+            print(f"     This may take several minutes for large repositories...")
+
+            # Ensure parent directory exists
+            repo_path.parent.mkdir(exist_ok=True, parents=True)
+            # Use FULL clone (not --depth 1, not --bare)
+            # SWE-bench needs:
+            # 1. Full history (to checkout old commits)
+            # 2. Working tree (to apply patches)
             result = subprocess.run(
-                ["git", "clone", "--depth", "1", repo_url, str(repo_path)],
+                ["git", "clone", repo_url, str(repo_path)],
                 capture_output=True,
                 text=True,
                 timeout=timeout
             )
-            
+
             if result.returncode != 0:
-                # Fallback to full clone
-                print(f"  ⚠️  Shallow clone failed, trying full clone...")
-                if repo_path.exists():
-                    shutil.rmtree(repo_path)
-                
-                result = subprocess.run(
-                    ["git", "clone", repo_url, str(repo_path)],
-                    capture_output=True,
-                    text=True,
-                    timeout=timeout
-                )
-                
-                if result.returncode != 0:
-                    raise RuntimeError(f"Git clone failed: {result.stderr}")
-            
+                raise RuntimeError(f"Git clone failed: {result.stderr}")
+
             print(f"  ✅ Repository cloned successfully")
             return repo_path
-            
+
         except subprocess.TimeoutExpired:
             if repo_path.exists():
                 shutil.rmtree(repo_path)
@@ -97,58 +141,67 @@ class RepositoryManager:
             if repo_path.exists():
                 shutil.rmtree(repo_path)
             raise RuntimeError(f"Clone failed: {str(e)}")
+        finally:
+            # Release lock
+            if lock_fd:
+                try:
+                    fcntl.flock(lock_fd.fileno(), fcntl.LOCK_UN)
+                    lock_fd.close()
+                    if lock_file.exists():
+                        lock_file.unlink()
+                except:
+                    pass
     
-    def checkout_commit(self, repo_path: Path, commit: str, 
+    def checkout_commit(self, repo_path: Path, commit: str,
                        timeout: int = 30) -> bool:
         """
         Checkout specific commit in repository.
-        
+        Uses git checkout with --force to avoid lock conflicts.
+
         Args:
             repo_path: Path to git repository
             commit: Commit SHA to checkout
             timeout: Timeout in seconds
-            
+
         Returns:
             True if successful, False otherwise
         """
         try:
-            # First, fetch if needed (for shallow clones)
-            if self._is_shallow_clone(repo_path):
-                print(f"  📥 Fetching commit {commit[:8]}...")
-                fetch_result = subprocess.run(
-                    ["git", "fetch", "--depth", "1", "origin", commit],
+            # Clean any stale lock files first
+            lock_file = repo_path / ".git" / "index.lock"
+            if lock_file.exists():
+                try:
+                    lock_file.unlink()
+                    print(f"  🔓 Removed stale lock file")
+                except:
+                    pass
+
+            # Retry logic for concurrent access
+            max_retries = 3
+            for attempt in range(max_retries):
+                result = subprocess.run(
+                    ["git", "checkout", "-f", commit],
                     cwd=repo_path,
                     capture_output=True,
                     text=True,
                     timeout=timeout
                 )
-                
-                # If fetch fails, unshallow the repo
-                if fetch_result.returncode != 0:
-                    print(f"  🔄 Converting to full clone...")
-                    subprocess.run(
-                        ["git", "fetch", "--unshallow"],
-                        cwd=repo_path,
-                        capture_output=True,
-                        text=True,
-                        timeout=timeout
-                    )
-            
-            # Checkout commit
-            result = subprocess.run(
-                ["git", "checkout", "-f", commit],
-                cwd=repo_path,
-                capture_output=True,
-                text=True,
-                timeout=timeout
-            )
-            
-            if result.returncode == 0:
-                print(f"  ✓ Checked out commit: {commit[:8]}")
-                return True
-            else:
+
+                if result.returncode == 0:
+                    print(f"  ✓ Checked out commit: {commit[:8]}")
+                    return True
+
+                # Check if it's a lock file issue
+                if "index.lock" in result.stderr:
+                    if attempt < max_retries - 1:
+                        print(f"  ⏳ Lock conflict, retrying ({attempt + 1}/{max_retries})...")
+                        time.sleep(2 * (attempt + 1))  # Exponential backoff
+                        continue
+
                 print(f"  ❌ Checkout failed: {result.stderr}")
                 return False
+
+            return False
                 
         except subprocess.TimeoutExpired:
             print(f"  ❌ Checkout timed out after {timeout}s")

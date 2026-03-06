@@ -6,7 +6,7 @@ Full repository support with complete file analysis
 import json
 import sys
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 import time
 
 sys.path.insert(0, str(Path(__file__).parent))
@@ -62,7 +62,7 @@ class ProductionBugAnalyzerV2:
         self.diff_parser = GitDiffParser()
     
     @staticmethod
-    def normalize_repo_url(repo_field: str) -> tuple[str, str]:
+    def normalize_repo_url(repo_field: str) -> Tuple[str, str]:
         """
         Normalize repository field to GitHub URL and repo name.
         
@@ -294,65 +294,92 @@ class ProductionBugAnalyzerV2:
             return f"{owner}_{repo}"
         return "unknown_repo"
     
-    def _analyze_file_pair(self, filepath: str, 
-                          old_code: str, new_code: str) -> Dict[str, Any]:
+    def _analyze_file_pair(self, filepath: str,
+                          old_code: str, new_code: str,
+                          skip_graph_metrics: bool = False) -> Dict[str, Any]:
         """Analyze single file pair (BEFORE and AFTER)"""
         file_results = {
             'filepath': filepath,
             'metrics': {}
         }
-        
+
         # Skip empty files
         if not old_code and not new_code:
             return file_results
-        
+
         try:
             # Tier 1: Basic Metrics
             print("    Computing basic metrics...")
             file_results['metrics']['basic'] = self._compute_basic_metrics(
                 old_code, new_code
             )
-            
+
             # Tier 2: AST Metrics
             print("    Computing AST metrics...")
             file_results['metrics']['ast'] = self._compute_ast_metrics(
                 old_code, new_code
             )
-            
-            # Tier 3: Graph Metrics
-            print("    Computing graph metrics...")
-            file_results['metrics']['graph'] = self._compute_graph_metrics(
-                old_code, new_code
-            )
-            
+
+            # Tier 3: Graph Metrics (skip for unchanged context files — GED is trivially 0)
+            if skip_graph_metrics:
+                print("    Skipping graph metrics (context file, before == after, GED=0)")
+                file_results['metrics']['graph'] = self._zero_graph_metrics()
+            else:
+                print("    Computing graph metrics...")
+                file_results['metrics']['graph'] = self._compute_graph_metrics(
+                    old_code, new_code
+                )
+
         except Exception as e:
             file_results['error'] = str(e)
-        
+
         return file_results
     
     def _compute_basic_metrics(self, old_code: str, new_code: str) -> Dict[str, Any]:
         """Compute all basic metrics from full files"""
         metrics = {}
         
-        # LOC - Calculate from full file comparison
+        # LOC - Calculate actual changed lines using difflib
         try:
-            old_lines = old_code.split('\n')
-            new_lines = new_code.split('\n')
-            
-            # Simple diff: count different lines
-            added = len(new_lines) - len(old_lines)
-            deleted = -added if added < 0 else 0
-            added = added if added > 0 else 0
-            
+            import difflib
+
+            # Generate unified diff
+            diff_lines = list(difflib.unified_diff(
+                old_code.splitlines(keepends=True),
+                new_code.splitlines(keepends=True),
+                lineterm=''
+            ))
+            patch_content = ''.join(diff_lines)
+
+            # Count added, deleted lines and hunks (exclude diff headers)
+            added = 0
+            deleted = 0
+            hunks_count = 0
+            for line in patch_content.split('\n'):
+                if line.startswith('+') and not line.startswith('+++'):
+                    added += 1
+                elif line.startswith('-') and not line.startswith('---'):
+                    deleted += 1
+                elif line.startswith('@@'):
+                    hunks_count += 1
+
             metrics['LOC'] = {
                 'added': added,
                 'deleted': deleted,
                 'modified': added + deleted,
-                'old_total': len(old_lines),
-                'new_total': len(new_lines)
+                'old_total': len(old_code.split('\n')),
+                'new_total': len(new_code.split('\n'))
             }
+
+            # Separate metrics for individual tracking and aggregation
+            metrics['Lines_Added'] = added
+            metrics['Lines_Deleted'] = deleted
+            metrics['Hunks_Count'] = hunks_count
         except:
             metrics['LOC'] = {'added': -1, 'deleted': -1, 'error': True}
+            metrics['Lines_Added'] = -1
+            metrics['Lines_Deleted'] = -1
+            metrics['Hunks_Count'] = -1
         
         # Token Edit Distance
         try:
@@ -416,6 +443,21 @@ class ProductionBugAnalyzerV2:
         
         return metrics
     
+    def _zero_graph_metrics(self) -> Dict[str, Any]:
+        """Return zero graph metrics for unchanged context files (before == after)."""
+        zero_ged = {'ged': 0.0, 'normalized': 0.0, 'nodes_before': 0, 'nodes_after': 0,
+                    'edges_before': 0, 'edges_after': 0, 'method': 'skipped_context'}
+        return {
+            'CFG_GED':        {**zero_ged, 'cfg_ged': 0.0},
+            'DFG_GED':        {**zero_ged, 'dfg_ged': 0.0,
+                               'def_use_chains_before': 0, 'def_use_chains_after': 0,
+                               'beam_width': 0},
+            'Call_Graph_GED': {**zero_ged, 'callgraph_ged': 0.0,
+                               'functions_before': 0, 'functions_after': 0},
+            'PDG_GED':        {**zero_ged, 'pdg_ged': 0.0, 'strategy': 'skipped_context'},
+            'CPG_GED':        {**zero_ged, 'cpg_ged': 0.0, 'strategy': 'skipped_context'},
+        }
+
     def _compute_graph_metrics(self, old_code: str, new_code: str) -> Dict[str, Any]:
         """Compute all graph-based metrics"""
         metrics = {}
